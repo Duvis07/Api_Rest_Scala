@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+
+
+# rutas de la aplicacion
+GET           /api/todos                   controllers.TodoController.getAll
+GET           /api/todos/:id               controllers.TodoController.getById(id: Long)
+POST          /api/todos/add               controllers.TodoController.add
+PUT           /api/todos/update/:id        controllers.TodoController.update(id: Long)
+DELETE        /api/todos/delete/:id        controllers.TodoController.delete(id: Long)
